@@ -8,10 +8,14 @@
 	      	html {
 	      		background: black;
 	      		color: white;
-	      		font-size: 5vw;
 	      		vertical-align: top;
-
+	      		font-family: sans-serif;
 	      	}
+
+	      	h1 {font-size: 6vw; padding-bottom: 2vh}
+	      	h2 {font-size: 4vw; padding-bottom: 2vh}
+	      	p  {font-size: 5vw; padding-bottom: 2vh}
+
 	      	body {
 	      		max-width: 1024px;
 	      		margin: auto;
@@ -25,6 +29,7 @@
 	      	ul li {
 	      		display: inline;
 	      		padding-left: 10px;
+	      		font-size: 5vw;
 	      	}
 
 	      	polygon, path {
@@ -42,15 +47,18 @@
 	      	.container {
 	      		display: flex;
 	  			flex-direction: row;
-	  			width: 1400vw;
+	  			width: 1260vw;
 			}
 
 	      	.caption {
 	      		vertical-align: top; 
-	      		border: white 1px solid;
+	      		/*border: white 1px solid;*/
 	      		display: inline-block;
 	      		width: 90vw;
-	      		word-wrap: normal;  
+	      		height: 50vh;
+	      		overflow-y: scroll;
+	      		word-wrap: normal; 
+	      		padding: 10px; 
 	      	}
 
 	      	circle {
@@ -69,19 +77,19 @@
   			$(".en").show();
   			$(".jp").hide();
 	  		$("#buttonZH").click(function(){
-	  			$(".zh").show();
-	  			$(".en").hide();
-	  			$(".jp").hide();
+	  			$(".zh").show("slow");
+	  			$(".en").hide("slow");
+	  			$(".jp").hide("slow");
 	  		});
 	  		$("#buttonEN").click(function(){
-	  			$(".zh").hide();
-	  			$(".en").show();
-	  			$(".jp").hide();
+	  			$(".zh").hide("slow");
+	  			$(".jp").hide("slow");
+	  			$(".en").show("slow");
 	  		});
 	  		$("#buttonJP").click(function(){
-	  			$(".zh").hide();
-	  			$(".en").hide();
-	  			$(".jp").show();
+	  			$(".zh").hide("slow");
+	  			$(".en").hide("slow");
+	  			$(".jp").show("slow");
 	  		});
 	  	});
 	  	</script>
