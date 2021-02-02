@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+	  <meta charset="utf-8">
+	  <title>Title of the document</title>
+      <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css">
+      <style>
+      	html {
+      		background: black;
+      		color: white;
+      	}
+      	body {
+      		max-width: 1024px;
+      		margin: auto;
+      		padding: 20px;
+      	}
+      	ul {
+      		width: 100%;
+      		text-align: right;
+      		display: block;
+      	}
+      	ul li {
+      		display: inline;
+      	}
+
+      	polygon, path {
+      		fill:none;
+      		stroke:white;
+      		stroke-width:1;
+      	}
+	  </style>
+	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	  <script>
+	  	$(function() {
+	  		$("#buttonZH").click(function(){
+	  			$("#zh").show();
+	  			$("#en").hide();
+	  			$("#jp").hide();
+	  		});
+	  		$("#buttonEN").click(function(){
+	  			$("#zh").hide();
+	  			$("#en").show();
+	  			$("#jp").hide();
+	  		});
+	  		$("#buttonJP").click(function(){
+	  			$("#zh").hide();
+	  			$("#en").hide();
+	  			$("#jp").show();
+	  		});
+	  	});
+	  </script>
+	</head>
+	<body>
+	<ul>
+		<li id="buttonZH">中文</li>
+		<li id="buttonEN">English</li>
+		<li id="buttonJP">日本語</li>
+	</ul>
+	<div class="svg-container">
+	<svg width="100%" viewBox="0 0 1024 544">
+<polygon class="st2" points="830.97,300.68 863.63,314.44 835.48,381.29 956.95,432.19 985.11,365.33 1016.26,378.45 947.15,542.55 916.76,529.75 942.87,465.62 822.16,415.04 795.28,478.86 761.86,464.78 "/>
+<polygon class="st2" points="397.18,96 313.41,96 271.53,168.54 313.41,241.08 397.18,241.08 439.06,168.54 " />
+<path class="st2" d="M659.48,474.37l-61-27.2l33.8-82.43c-69.46-32.84-136.66-49.7-201.96-56.88l-8.04-18.5l-19.38-2.32
+	l-12.98,17.53c-24.29-1.39-65.83-1.06-70.38-0.81l-11.9-17.24l-19.45,1.58l-6.5,18.6c-0.62,0.06-1.24,0.13-1.86,0.19
+	c-97.4,10.03-185.14,35.51-218.6,43.23L0,184.47L350.35-0.45l433.61,210.21L687.5,406.78l14.01,5.77l55.23-111.29l56.88-36.27 l214.33,91.5"/>
+	<circle cx="498" cy="418" r="14"/>
+<path d="M588.45,319.86h-0.05l-3.1,1.47l-0.63-2.86l4.32-2.01h3.14v16.28h-3.68V319.86z M589,310c-7.73,0-14,6.27-14,14
+	s6.27,14,14,14s14-6.27,14-14S596.73,310,589,310z"/>
+
+</svg>
+</div>
+		<p id="zh" style="display: none;">zh This is a paragraph.</p>
+		<p id="en" style="display: block;">en This is a paragraph.</p>
+		<p id="jp" style="display: none;">jp his is a paragraph.</p>
+
+	</body>
+</html>
