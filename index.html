@@ -39,7 +39,7 @@
 	      		overflow-x:scroll;
 	      	}
 
-	      	#en {
+	      	.container {
 	      		display: flex;
 	  			flex-direction: row;
 	  			width: 600vw;
@@ -66,23 +66,26 @@
 	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	  <script>
 	  	$(function() {
+  			$(".zh").hide();
+  			$(".en").show();
+  			$(".jp").hide();
 	  		$("#buttonZH").click(function(){
-	  			$("#zh").show();
-	  			$("#en").hide();
-	  			$("#jp").hide();
+	  			$(".zh").show();
+	  			$(".en").hide();
+	  			$(".jp").hide();
 	  		});
 	  		$("#buttonEN").click(function(){
-	  			$("#zh").hide();
-	  			$("#en").show();
-	  			$("#jp").hide();
+	  			$(".zh").hide();
+	  			$(".en").show();
+	  			$(".jp").hide();
 	  		});
 	  		$("#buttonJP").click(function(){
-	  			$("#zh").hide();
-	  			$("#en").hide();
-	  			$("#jp").show();
+	  			$(".zh").hide();
+	  			$(".en").hide();
+	  			$(".jp").show();
 	  		});
 	  	});
-	  </script>
+	  	</script>
 	</head>
 	<body>
 	<ul>
@@ -112,33 +115,150 @@
 				c0-0.98,0.05-1.99,0.11-3.03l-0.09,0c-0.52,1.06-0.96,2-1.51,3.02l-2.17,3.57l-0.01,0.05H488.39z"/>
 	</svg>
 	<div class="wrapper">
-		<div id="zh" style="display: none;">zh This is a paragraph.</div>
-		<div id="en" style="display: block;">
-		<div class="caption">
-			<h1>1 Sacred Shinto Straw Festoon</h1>
-			<h2>644×540mm<br>platinum print<br>2020</h2>
-			<p>I'm exploring the materiality of spiritual feeling by going back and forth between digital and analog, and considering the spirituality of Digital Nature.</p>
+		<div class="container">
+			<div class="en caption">
+				<h1>1 Sacred Shinto Straw Festoon</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>I'm exploring the materiality of spiritual feeling by going back and forth between digital and analog, and considering the spirituality of Digital Nature.</p>
+			</div>
+			<div class="jp caption">
+				<h1>1 注連縄</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>デジタルとアナログを行き来することで霊性を感じる物質性を探計算機自然の霊性を考えている。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>2 Tibetan Cymbals</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>The material tactility that bridges the gap between sound, light, and the trance state.</p>
+			</div>
+			<div class="jp caption">
+				<h1>2 法具Ⅰ</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>音と光とトランス状態の間を橋梁する物質的な手触り。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>3 Natural Computation of Logarithmic Spiral</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>While picking up romances such as a biocomputer born to compute logarithmic spirals.</p>
+			</div>
+			<div class="jp caption">
+				<h1>3 対数螺旋の自然計算</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>対数螺旋を計算するために生まれたバイオコンピュータというようなロマンを拾い集めながら。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>4 Tooth Wales, Waves, and Platinum</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>I would like to peek into the Umwelt of toothed whales, and wonder about their physicality in the daily life between waves of sound and light.</p>
+			</div>
+			<div class="jp caption">
+				<h1>4 歯鯨と波と白金と</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>歯鯨の環世界を覗いてみたい．音と光の波の合間に生きる日々の中で，鯨の身体性に思いを馳せる。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>5 Withered Tree Wrapped in Light</h1>
+				<h2>540x644mm<br>platinum print<br>2020</h2>
+				<p>At the exhibition “Sehnsucht nach Masse," I photographed the light on a dead tree. From flowers on old trees to light on dead trees.</p>
+			</div>	
+			<div class="jp caption">
+				<h1>5 光を纏う枯れ木</h1>
+				<h2>540x644mm<br>platinum print<br>2020</h2>
+				<p>質量への憧憬展のときに枯れ木が纏う光を撮った．老い木に花から枯れ木に光へ。</p>
+			</div>	
+
+			<div class="en caption">
+				<h1>6 Saving Television in a Form with Mass I</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>Seals off industrial society while meditating on the Vapor Wave.</p>
+			</div>
+			<div class="jp caption">
+				<h1>6 映像装置を質量に保存するⅠ</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>ヴェイパーウェーブのことを考えながら工業社会を封印す。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>7 Saving Acoustic Equipment in a Form with Mass I</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>To remember what is breaking.</p>
+			</div>
+			<div class="jp caption">
+				<h1>7 音響装置を質量に保存するⅠ</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>壊れゆくものを忘れないために。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>8 Leica, Blurred lens for Scenery</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>With a Leica in hand, I capture scenes from my daily life. In contrast to my artistry of high resolution, I use the lens to capture distorted landscapes, looking for the emotion that spills over from the resolution.</p>
+			</div>
+				<div class="jp caption">
+				<h1>8 ライカ・風景をにじませるレンズと</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>ライカを片手に日々を切り取る．解像度を高める作品性とは別に歪んだ風景をとるためのレンズで解像度から零れ落ちる情念を探している。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>9 Blue</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>Material reminiscence to perceive the blue</p>
+			</div>
+			<div class="jp caption">
+				<h1>9 青</h1>
+				<h2>644×540mm<br>platinum print<br>2020</h2>
+				<p>青を感じるための物質的な追憶。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>10 Perspective of XX Bird I<br>11 Perspective of XX Bird II</h1>
+				<h2>1170×1170mm<br>2019</h2>
+				<p>I am looking at the landscape transformed by mimicry. Insect body color may be a transformation of the predator’s point of view. The waves of the sea are cut out on the body surface of the fish, and the bird’s-eye view is cut out on the body surface of the insect. Mimicry seen from mathematical expressions such as Turing patterns connects calculation with nature and landscape, and subject and object.</p>
+			</div>
+			<div class="jp caption">
+				<h1>10 XXの風景 (鳥)Ⅰ<br>11 XXの風景 (鳥)ⅠI</h1>
+				<h2>1170×1170mm<br>2019</h2>
+				<p>擬態によって変換される風景を眺めている．昆虫の体色は捕食者の視点の変換かもしれない．海の波は魚の体表に切り取られ，鳥瞰視点は昆虫の体表に切り取られる．チューリングパターンなどの数式的表現から見られる擬態が計算と自然と風景，主体と客体をつないでいる。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>12 The form of Digital Nature</h1>
+				<h2>2021</h2>
+				<p>Confronting the end to end transformation of material things in Digital Nature, and ruminating sehnsucht and spirituality, between the matter and the image.</p>
+			</div>
+			<div class="jp caption">
+				<h1>12 The form of Digital Nature</h1>
+				<h2>2021</h2>
+				<p>物化する計算機自然と対峙し，質量と映像の間にある憧憬や情念を反芻する</p>
+			</div>
+
+
+			<div class="en caption">
+				<h1>13 Phosphorescence of Natural Divinity</h1>
+				<p>I love the sight of cloth blowing in the wind. I am looking for something close to this feeling in the appearance of nature. I wander through a sea of motifs in search of the origin of the form. Silhouettes accumulated since the Edo period, militaristic silhouettes of the Showa period, and various motifs wandering among them, disappear and arise, are born and die. The creation of these motifs echoes like the sound of a bell, and the repeated ups and downs of life create the waves. The behavior of fabric blowing in the wind, the vibrations of sound shaking the air, and the slight swaying of light reflections all seem to be connected to unified wave field. The reincarnation of the digital world, and the photons of images that arise and disappear, replay memories scattered in time and space, and hide themselves in the wind and dust. The reverberations of the concrete, the rusty texture of the steel frame, the movement of the bones and muscles, the reverberations of the machine. I want to capture the phosphorescence that is generated at the end of life, the moment when faith is born in nature. I wonder if the inner, natural faith that arises here is the spirituality that is contained in the environment in which I grew up. I want to capture this phosphorescent spirituality inside the frame.</p>
+			</div>
+
+			<div class="jp caption">
+				<h1>13 燐光する霊性</h1>
+				<p>風に吹かれる布の姿が好きだ．自然の見せる姿の中に，この感覚に近しいものを探している．姿形のオリジンを探して，さまざまなモチーフの海をさまよう．江戸から蓄積されたシルエットや昭和の軍国的なシルエット，その中に彷徨うさまざまなモチーフが消えては生じて，生まれては死んでいく．その生成は鈴の音のようにこだまし，生命的な起伏を繰り返しては１つの波を作る．風に吹かれる布の振る舞いも，空気を揺らす音の振動も，光の反射の作るわずかな揺れも全ては１つの波の場に繋がっているようだ．デジタルの世界の輪廻転生も，生じては消える映像のフォトンも，時空間の中に点在する記憶を再生し，風塵の中に姿を隠す．コンクリートの持つ反響，鉄骨の持つ錆びた手触り，骨と筋肉の運動，軀の残響．生命の終わりに描かれる燐光が，自然の中で信仰を生み出すような瞬間を切り取りたい．ここに生じる内発的で，自然の内に秘めた信仰は，僕が育ってきた環境に内包される霊性だろうか．その燐光する霊性をフレームの内側に切り出す。</p>
+			</div>
+
+			<div class="en caption">
+				<h1>14 Scattered Focus Window</h1>
+				<p>In the course of researching and exploring media and artworks, I have come to see the longing for a world that is framed in a various way within a diverse range of frames. I am looking at the difference between analog and digital through a window of disparate perspectives.</p>
+			</div>
+
+			<div class="jp caption">
+				<h1>14 焦点の散らばった窓</h1>
+				<p>メディアの研究や作品を追いかけるうちに，様々なフレームで切り出される世界への憧憬がさまざまな枠の中に見えるようになった．視点のバラバラな窓を通じてアナログとデジタルの違いを眺めている。</p>
+			</div>
+
 		</div>
-		<div class="caption">
-			<h1>2 Blue</h1>
-			<h2>644×540mm<br>platinum print<br>2020</h2>
-			<p>Material reminiscence to perceive the blue.</p>
-		</div>
-		<div class="caption">
-			<h1>3 Saving Acoustic Equipment in a Form with Mass I</h1>
-			<h2>644×540mm<br>platinum print<br>2020</h2>
-			<p>To remember what is breaking..</p>
-		</div>
-		<div class="caption">
-			<h1>4 Saving Television in a Form with Mass I</h1>
-			<h2>644×540mm<br>platinum print<br>2020</h2>
-			<p>Seals off industrial society while meditating on the Vapor Wave..</p>
-		</div>
-		<div class="caption">
-			<h1>5 Withered Tree Wrapped in Light</h1>
-			<h2>540x644mm<br>platinum print<br>2020</h2>
-			<p>At the exhibition “Sehnsucht nach Masse," I photographed the light on a dead tree. From flowers on old trees to light on dead trees.</p>
-		</div>	
 	</div>
 	</body>
 </html>
