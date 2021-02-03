@@ -40,11 +40,6 @@
 	      		padding: 20px;
 	      	}
 
-	      	#instruction {
-	      		position: absolute;
-	      		bottom: 0%;
-	      	}
-
 	      	polygon, path {
 	      		fill:none;
 	      		stroke:white;
@@ -65,7 +60,7 @@
 
 	      	.caption {
 	      		vertical-align: top; 
-	      		/*border: white 1px solid;*/
+	      		border-right: white 1px solid;
 	      		display: inline-block;
 	      		width: 90vw;
 	      		height: 50vh;
@@ -77,8 +72,6 @@
 	      	circle {fill: white; stroke: none;}
 	      	.number {fill: black; stroke: none;}
 	      	#title>path {fill: white;}
-
-
 	  </style>
 	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	  <script>
@@ -87,7 +80,7 @@
 	  			$(".en").show();
 	  			$(".jp").hide();
 		  		$( ".wrapper" ).scroll(function() {
-					$("#instruction").fadeOut(); 
+					$(".instruction").fadeOut(); 
 				});
 		  		$("#buttonZH").click(function(){
 		  			$(".en").hide("fast");
@@ -418,11 +411,13 @@
 				<h1>1 Sacred Shinto Straw Festoon</h1>
 				<h2>644×540mm<br>platinum print<br>2020</h2>
 				<p>I'm exploring the materiality of spiritual feeling by going back and forth between digital and analog, and considering the spirituality of Digital Nature.</p>
+				<svg class="instruction" viewbox="-200 0 400 100 "><path d="m 117.2,23.2 -112.7,0 0,43.5 112.7,0 0,18.1 c 0,0 59.3,-39.9 59.3,-39.9 L 117.2,5 v 18.1 z"/></svg>		
 			</div>
 			<div class="jp caption">
 				<h1>1 注連縄</h1>
 				<h2>644×540mm<br>platinum print<br>2020</h2>
 				<p>デジタルとアナログを行き来することで霊性を感じる物質性を探計算機自然の霊性を考えている。</p>
+				<svg class="instruction" viewbox="-200 0 400 100 "><path d="m 117.2,23.2 -112.7,0 0,43.5 112.7,0 0,18.1 c 0,0 59.3,-39.9 59.3,-39.9 L 117.2,5 v 18.1 z"/></svg>		
 			</div>
 
 			<div class="en caption">
@@ -556,9 +551,6 @@
 				<p>メディアの研究や作品を追いかけるうちに，様々なフレームで切り出される世界への憧憬がさまざまな枠の中に見えるようになった．視点のバラバラな窓を通じてアナログとデジタルの違いを眺めている。</p>
 			</div>
 		</div>
-	</div>
-	<svg id="instruction" viewbox="-210 0 400 100 ">
-		<path d="m 117.2,23.2 -112.7,0 0,43.5 112.7,0 0,18.1 c 0,0 59.3,-39.9 59.3,-39.9 L 117.2,5 v 18.1 z"/>
-	</svg>			
+	</div>	
 	</body>
 </html>
