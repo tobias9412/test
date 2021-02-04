@@ -5,27 +5,29 @@
 	  <title>Title of the document</title>
       <link href="https://meyerweb.com/eric/tools/css/reset/reset.css" rel="stylesheet" type="text/css">
 	  <link rel="preconnect" href="https://fonts.gstatic.com"> 
-	  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+	  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;700&display=swap" rel="stylesheet">
       <style>
 	      	html {
 	      		background: #0f0f0f;
 	      		color: white;
 	      		vertical-align: top;
-	      		font-family: 'Roboto', sans-serif;
+	      		font-family: 'Noto Sans TC', sans-serif;
 	      		width: 100%;
 	      		height: 100%;
 	      	}
 
-	      	.caption h1 {font-size: 6vw; padding-bottom: 2vh}
-	      	.caption h2 {font-size: 4vw; padding-bottom: 3vh}
-	      	.caption p  {font-size: 5vw; line-height: 1.3;}
+	      	a:link, a:visited, a:hover, a:active {color: white}
+
+	      	.caption h1 {font-size: 6vw; font-weight: 700; padding-bottom: 2vh}
+	      	.caption h2 {font-size: 4vw; font-weight: 700; padding-bottom: 3vh}
+	      	.caption p  {font-size: 5vw; font-weight: 300; line-height: 1.3;}
 	      	#title {padding-bottom: 2vh;}
 
 	      	h3 {
 	      		font-size: 4vw; 
 	      		padding-bottom: 3vh;
 	      		position: absolute;
-	      		margin-top: -2vh;
+	      		margin-top: -4vh;
 	      	}
 
 	      	nav ul {
@@ -63,7 +65,7 @@
 	      	.container {
 	      		display: flex;
 	  			flex-direction: row;
-	  			width: 1260vw;
+	  			width: 1980vw;
 			}
 
 	      	.caption {
@@ -83,30 +85,30 @@
 	  </style>
 	  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 	  <script>
-	  	$(function() {
-	  			$(".zh").hide();
-	  			$(".en").show();
-	  			$(".jp").hide();
-		  		$( ".wrapper" ).scroll(function() {
-					$(".instruction").fadeOut(); 
-				});
-		  		$("#buttonZH").click(function(){
-		  			$(".en").hide("fast");
-		  			$(".jp").hide("fast");
-		  			$(".zh").show("fast");
+		  	$(function() {
+		  			$(".zh").hide();
+		  			$(".en").show();
+		  			$(".jp").hide();
+			  		$( ".wrapper" ).scroll(function() {
+						$(".instruction").fadeOut(); 
+					});
+			  		$("#buttonZH").click(function(){
+			  			$(".en").hide("fast");
+			  			$(".jp").hide("fast");
+			  			$(".zh").show("fast");
+			  		});
+			  		$("#buttonEN").click(function(){
+			  			$(".zh").hide("fast");
+			  			$(".jp").hide("fast");
+			  			$(".en").show("fast");
+			  		});
+			  		$("#buttonJP").click(function(){
+			  			$(".zh").hide("fast");
+			  			$(".en").hide("fast");
+			  			$(".jp").show("fast");
+			  		});
 		  		});
-		  		$("#buttonEN").click(function(){
-		  			$(".zh").hide("fast");
-		  			$(".jp").hide("fast");
-		  			$(".en").show("fast");
-		  		});
-		  		$("#buttonJP").click(function(){
-		  			$(".zh").hide("fast");
-		  			$(".en").hide("fast");
-		  			$(".jp").show("fast");
-		  		});
-	  		});
-	  	</script>
+	  </script>
 	</head>
 	<body>
 	<nav>
@@ -351,78 +353,113 @@
 		<path class="st2" d="M659.48,474.37l-61-27.2l33.8-82.43c-69.46-32.84-136.66-49.7-201.96-56.88l-8.04-18.5l-19.38-2.32
 			l-12.98,17.53c-24.29-1.39-65.83-1.06-70.38-0.81l-11.9-17.24l-19.45,1.58l-6.5,18.6c-0.62,0.06-1.24,0.13-1.86,0.19
 			c-97.4,10.03-185.14,35.51-218.6,43.23L0,184.47L350.35-0.45l433.61,210.21L687.5,406.78l14.01,5.77l55.23-111.29l56.88-36.27 l214.33,91.5"/>
-		<circle cx="629" cy="341.46" r="22.46"/>
-		<circle cx="586" cy="323.78" r="22.46"/>
-		<circle cx="542" cy="309.11" r="22.46"/>
-		<circle cx="497" cy="298.43" r="22.46"/>
-		<circle cx="452" cy="290.78" r="22.46"/>
-		<circle cx="255" cy="290.11" r="22.46"/>
-		<circle cx="207" cy="297.43" r="22.46"/>
-		<circle cx="158" cy="306.76" r="22.46"/>
-		<circle cx="109" cy="316.5" r="22.46"/>
-		<circle cx="377" cy="48.82" r="22.46"/>
-		<circle cx="330" cy="47.15" r="22.46"/>
-		<circle cx="355" cy="180.48" r="22.46"/>
-		<circle cx="53" cy="248.22" r="22.46"/>
-		<circle cx="867" cy="481.54" r="22.46"/>
-		<path class="number" d="M626.59,334.81h-0.08l-4.97,2.36l-1.01-4.58l6.92-3.22h5.04v26.11h-5.91V334.81z"/>
-		<path class="number" d="M575.82,336.2v-3.7l3.36-3.03c5.71-5.13,8.49-8.05,8.54-11.1c0-2.12-1.25-3.81-4.27-3.81
-		c-2.25,0-4.21,1.13-5.59,2.15l-1.71-4.36c1.95-1.48,5.02-2.69,8.53-2.69c5.93,0,9.15,3.46,9.15,8.18c0,4.38-3.14,7.9-6.94,11.25
-		l-2.42,2v0.08h9.88v5.03H575.82z"/>
-		<path class="number" d="M533.9,317.15c1.06,0.57,3.59,1.59,6.07,1.59c3.16,0,4.78-1.52,4.77-3.47c-0.01-2.59-2.57-3.76-5.26-3.77
-			h-2.49v-4.38h2.38c2.04-0.01,4.63-0.8,4.63-3c0-1.56-1.27-2.73-3.84-2.73c-2.15,0-4.39,0.92-5.45,1.56l-1.25-4.4
-			c1.58-1.01,4.69-1.98,8.07-1.98c5.58,0,8.66,2.93,8.66,6.52c0,2.74-1.58,4.93-4.77,6.05v0.08c3.13,0.56,5.66,2.93,5.66,6.36
-			c0,4.61-4.06,7.98-10.68,7.98c-3.39,0-6.23-0.87-7.75-1.83L533.9,317.15z"/>
-		<path class="number" d="M497.63,310.85v-6.24h-11.57v-3.96l9.86-15.91h7.48v15.3h3.12v4.57h-3.12v6.24H497.63z M497.63,300.04v-5.77
-			c0-1.57,0.08-3.18,0.18-4.87l-0.15-0.01c-0.83,1.7-1.54,3.21-2.42,4.84l-3.48,5.72l-0.02,0.08H497.63z"/>
-		<path class="number" d="M459.23,283.72h-10.13l-0.56,4c0.58-0.07,1.07-0.09,1.69-0.09c2.49,0.01,5.05,0.58,6.89,1.88
-			c1.96,1.34,3.16,3.52,3.16,6.57c0,4.87-4.17,9.16-11.21,9.16c-3.16,0-5.8-0.73-7.27-1.48l1.11-4.59c1.16,0.57,3.52,1.3,5.88,1.3
-			c2.54,0,5.23-1.22,5.22-3.99c-0.01-2.67-2.15-4.34-7.35-4.34c-1.43,0-2.45,0.1-3.51,0.24l1.69-13.69h14.38V283.72z"/>
-		<path class="number" d="M261.49,280.77c-0.7-0.04-1.43-0.01-2.38,0.07c-5.43,0.44-7.83,3.2-8.52,6.24h0.12
-			c1.31-1.29,3.12-2.07,5.54-2.07c4.38,0,8.08,3.09,8.08,8.53c0,5.18-3.97,9.42-9.62,9.42c-6.96,0-10.37-5.19-10.37-11.39
-			c0-4.93,1.8-9.02,4.63-11.64c2.6-2.38,5.98-3.65,10.05-3.85c1.13-0.09,1.87-0.06,2.46-0.02L261.49,280.77z M258.13,293.86
-			c-0.01-2.42-1.27-4.5-3.88-4.5c-1.64,0-3.02,1-3.6,2.31c-0.18,0.35-0.27,0.82-0.27,1.55c0.12,2.76,1.45,5.25,4.23,5.25
-			C256.78,298.47,258.13,296.51,258.13,293.86z"/>
-		<path class="number" d="M215.54,285.35v3.84l-10.76,22.26h-6.48l10.76-20.99v-0.08h-11.97v-5.03H215.54z"/>
-		<path class="number" d="M147.41,312.36c0-3.17,1.8-5.31,4.65-6.57l0-0.09c-2.54-1.31-3.78-3.44-3.78-5.73c0-4.42,3.98-7.34,9.2-7.34
-			c6.12,0,8.65,3.54,8.65,6.7c0,2.25-1.22,4.47-3.8,5.77v0.1c2.54,0.99,4.8,3.13,4.8,6.5c0,4.74-3.98,7.93-10.04,7.93
-			C150.46,319.62,147.41,315.9,147.41,312.36z M160.92,312.13c0-2.27-1.72-3.63-4.12-4.27c-2,0.56-3.16,2-3.16,3.88
-			c-0.03,1.9,1.41,3.68,3.71,3.68C159.49,315.41,160.92,314,160.92,312.13z M154.05,299.76c-0.01,1.77,1.57,2.91,3.69,3.55
-			c1.4-0.39,2.65-1.7,2.65-3.33c0-1.61-0.93-3.24-3.19-3.24C155.12,296.75,154.05,298.14,154.05,299.76z"/>
-		<path class="number" d="M100.73,326.12c0.79,0.08,1.45,0.06,2.66-0.01c1.86-0.1,3.75-0.64,5.14-1.61c1.72-1.15,2.83-2.87,3.29-4.83
-			l-0.09-0.04c-1.17,1.2-2.88,1.89-5.25,1.89c-4.42,0-8.12-3.07-8.12-8.14c0-5.1,4.09-9.4,9.84-9.4c6.71,0,9.87,5.15,9.87,11.23
-			c0,5.44-1.72,9.4-4.57,12.03c-2.49,2.25-5.92,3.48-9.99,3.64c-1.01,0.08-2.07,0.05-2.77-0.01V326.12z M104.42,312.99
-			c0.01,2.25,1.24,4.18,3.69,4.18c1.69,0,2.83-0.78,3.41-1.7c0.19-0.36,0.28-0.78,0.28-1.53c0.03-2.78-1.03-5.5-3.81-5.5
-			C105.92,308.44,104.4,310.29,104.42,312.99z"/>
-		<path class="number" d="M367.1,42.31h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.22v21.89h-4.95V42.31z"/>
-		<path class="number" d="M392.28,48.6c0,6.74-2.74,11.41-8.32,11.41c-5.66,0-8.16-5.07-8.18-11.27c0-6.36,2.67-11.36,8.33-11.36
-			C389.96,37.38,392.28,42.6,392.28,48.6z M380.9,48.72c-0.01,5.04,1.2,7.42,3.16,7.42c1.99,0,3.09-2.5,3.09-7.48
-			c0-4.85-1.06-7.4-3.1-7.4C382.17,41.26,380.9,43.62,380.9,48.72z"/>
-		<path class="number" d="M320.1,42.24h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.22v21.89h-4.95V42.24z"/>
-		<path class="number" d="M335.63,42.24h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.23v21.89h-4.95V42.24z"/>
-		<path class="number" d="M345.1,173.96h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.22v21.89h-4.95V173.96z"/>
-		<path class="number" d="M354.11,191.29v-3.1l2.82-2.54c4.79-4.3,7.12-6.75,7.16-9.31c0-1.78-1.05-3.19-3.58-3.19
-			c-1.89,0-3.53,0.94-4.68,1.8l-1.44-3.66c1.63-1.24,4.21-2.26,7.15-2.26c4.97,0,7.67,2.9,7.67,6.86c0,3.67-2.63,6.62-5.82,9.43
-			l-2.03,1.68v0.07h8.28v4.22H354.11z"/>
-		<path class="number" d="M43.1,243.31h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.22v21.89H43.1V243.31z"/>
-		<path class="number" d="M53.01,255.62c0.89,0.48,3.01,1.33,5.09,1.33c2.65,0,4-1.28,4-2.91c-0.01-2.17-2.15-3.15-4.41-3.16h-2.09
-			v-3.67h2c1.71-0.01,3.88-0.67,3.88-2.52c0-1.31-1.06-2.29-3.22-2.29c-1.8,0-3.68,0.77-4.57,1.31l-1.05-3.69
-			c1.32-0.85,3.93-1.66,6.77-1.66c4.68,0,7.26,2.46,7.26,5.46c0,2.3-1.32,4.14-4,5.08v0.07c2.62,0.47,4.74,2.45,4.74,5.33
-			c0,3.86-3.41,6.69-8.95,6.69c-2.84,0-5.23-0.73-6.49-1.54L53.01,255.62z"/>
-		<path class="number" d="M857.1,475.03h-0.07l-4.16,1.98l-0.85-3.84l5.8-2.7h4.22v21.89h-4.95V475.03z"/>
-		<path class="number" d="M875.17,492.36v-5.23h-9.7v-3.32l8.27-13.34H880v12.83h2.62v3.83H880v5.23H875.17z M875.17,483.3v-4.84
-			c0-1.31,0.07-2.67,0.15-4.08l-0.12-0.01c-0.7,1.43-1.29,2.69-2.03,4.06l-2.92,4.8l-0.02,0.07H875.17z"/>
+		<circle cx="629" cy="341.5" r="22.5"/>
+		<circle cx="586" cy="323.8" r="22.5"/>
+		<circle cx="542" cy="309.1" r="22.5"/>
+		<circle cx="497" cy="298.4" r="22.5"/>
+		<circle cx="452" cy="290.8" r="22.5"/>
+		<circle cx="255" cy="290.1" r="22.5"/>
+		<circle cx="207" cy="297.4" r="22.5"/>
+		<circle cx="158" cy="306.8" r="22.5"/>
+		<circle cx="109" cy="316.5" r="22.5"/>
+		<circle cx="377" cy="48.8" r="22.5"/>
+		<circle cx="330" cy="47.2" r="22.5"/>
+		<circle cx="355" cy="180.5" r="22.5"/>
+		<circle cx="53" cy="248.2" r="22.5"/>
+		<circle cx="867" cy="481.5" r="22.5"/>
+		<circle cx="659.1" cy="186.5" r="22.5"/>
+		<circle cx="585.1" cy="151.4" r="22.5"/>
+		<circle cx="514" cy="117.2" r="22.5"/>
+		<circle cx="437.8" cy="79" r="22.5"/>
+		<circle cx="258.1" cy="85.7" r="22.5"/>
+		<circle cx="184.5" cy="124.3" r="22.5"/>
+		<circle cx="98.4" cy="169.4" r="22.5"/>
+		<circle cx="352.5" cy="284.3" r="22.5"/>
+
+		<path class="number" d="M626.6,334.8L626.6,334.8l-5,2.4l-1-4.6l6.9-3.2h5v26.1h-5.9L626.6,334.8L626.6,334.8z"/>
+		<path class="number" d="M575.8,336.2v-3.7l3.4-3c5.7-5.1,8.5-8,8.5-11.1c0-2.1-1.2-3.8-4.3-3.8c-2.2,0-4.2,1.1-5.6,2.1l-1.7-4.4
+			c2-1.5,5-2.7,8.5-2.7c5.9,0,9.2,3.5,9.2,8.2c0,4.4-3.1,7.9-6.9,11.2l-2.4,2v0.1h9.9v5L575.8,336.2L575.8,336.2z"/>
+		<path class="number" d="M533.9,317.1c1.1,0.6,3.6,1.6,6.1,1.6c3.2,0,4.8-1.5,4.8-3.5c0-2.6-2.6-3.8-5.3-3.8H537v-4.4h2.4
+			c2,0,4.6-0.8,4.6-3c0-1.6-1.3-2.7-3.8-2.7c-2.2,0-4.4,0.9-5.5,1.6l-1.2-4.4c1.6-1,4.7-2,8.1-2c5.6,0,8.7,2.9,8.7,6.5
+			c0,2.7-1.6,4.9-4.8,6v0.1c3.1,0.6,5.7,2.9,5.7,6.4c0,4.6-4.1,8-10.7,8c-3.4,0-6.2-0.9-7.8-1.8L533.9,317.1z"/>
+		<path class="number" d="M497.6,310.9v-6.2h-11.6v-4l9.9-15.9h7.5V300h3.1v4.6h-3.1v6.2H497.6z M497.6,300v-5.8c0-1.6,0.1-3.2,0.2-4.9
+			l-0.1,0c-0.8,1.7-1.5,3.2-2.4,4.8l-3.5,5.7l0,0.1L497.6,300L497.6,300z"/>
+		<path class="number" d="M459.2,283.7h-10.1l-0.6,4c0.6-0.1,1.1-0.1,1.7-0.1c2.5,0,5,0.6,6.9,1.9c2,1.3,3.2,3.5,3.2,6.6
+			c0,4.9-4.2,9.2-11.2,9.2c-3.2,0-5.8-0.7-7.3-1.5l1.1-4.6c1.2,0.6,3.5,1.3,5.9,1.3c2.5,0,5.2-1.2,5.2-4c0-2.7-2.1-4.3-7.4-4.3
+			c-1.4,0-2.5,0.1-3.5,0.2l1.7-13.7h14.4L459.2,283.7L459.2,283.7z"/>
+		<path class="number" d="M261.5,280.8c-0.7,0-1.4,0-2.4,0.1c-5.4,0.4-7.8,3.2-8.5,6.2h0.1c1.3-1.3,3.1-2.1,5.5-2.1
+			c4.4,0,8.1,3.1,8.1,8.5c0,5.2-4,9.4-9.6,9.4c-7,0-10.4-5.2-10.4-11.4c0-4.9,1.8-9,4.6-11.6c2.6-2.4,6-3.6,10-3.9
+			c1.1-0.1,1.9-0.1,2.5,0L261.5,280.8z M258.1,293.9c0-2.4-1.3-4.5-3.9-4.5c-1.6,0-3,1-3.6,2.3c-0.2,0.4-0.3,0.8-0.3,1.5
+			c0.1,2.8,1.4,5.2,4.2,5.2C256.8,298.5,258.1,296.5,258.1,293.9z"/>
+		<path class="number" d="M215.5,285.4v3.8l-10.8,22.3h-6.5l10.8-21v-0.1h-12v-5L215.5,285.4L215.5,285.4z"/>
+		<path class="number" d="M147.4,312.4c0-3.2,1.8-5.3,4.6-6.6v-0.1c-2.5-1.3-3.8-3.4-3.8-5.7c0-4.4,4-7.3,9.2-7.3c6.1,0,8.6,3.5,8.6,6.7
+			c0,2.2-1.2,4.5-3.8,5.8v0.1c2.5,1,4.8,3.1,4.8,6.5c0,4.7-4,7.9-10,7.9C150.5,319.6,147.4,315.9,147.4,312.4z M160.9,312.1
+			c0-2.3-1.7-3.6-4.1-4.3c-2,0.6-3.2,2-3.2,3.9c0,1.9,1.4,3.7,3.7,3.7C159.5,315.4,160.9,314,160.9,312.1z M154.1,299.8
+			c0,1.8,1.6,2.9,3.7,3.5c1.4-0.4,2.6-1.7,2.6-3.3c0-1.6-0.9-3.2-3.2-3.2C155.1,296.8,154.1,298.1,154.1,299.8z"/>
+		<path class="number" d="M100.7,326.1c0.8,0.1,1.4,0.1,2.7,0c1.9-0.1,3.8-0.6,5.1-1.6c1.7-1.1,2.8-2.9,3.3-4.8l-0.1,0
+			c-1.2,1.2-2.9,1.9-5.2,1.9c-4.4,0-8.1-3.1-8.1-8.1c0-5.1,4.1-9.4,9.8-9.4c6.7,0,9.9,5.1,9.9,11.2c0,5.4-1.7,9.4-4.6,12
+			c-2.5,2.2-5.9,3.5-10,3.6c-1,0.1-2.1,0-2.8,0L100.7,326.1L100.7,326.1z M104.4,313c0,2.2,1.2,4.2,3.7,4.2c1.7,0,2.8-0.8,3.4-1.7
+			c0.2-0.4,0.3-0.8,0.3-1.5c0-2.8-1-5.5-3.8-5.5C105.9,308.4,104.4,310.3,104.4,313z"/>
+		<path class="number" d="M367.1,42.3L367.1,42.3l-4.2,2l-0.9-3.8l5.8-2.7h4.2v21.9h-5L367.1,42.3L367.1,42.3z"/>
+		<path class="number" d="M392.3,48.6c0,6.7-2.7,11.4-8.3,11.4c-5.7,0-8.2-5.1-8.2-11.3c0-6.4,2.7-11.4,8.3-11.4
+			C390,37.4,392.3,42.6,392.3,48.6z M380.9,48.7c0,5,1.2,7.4,3.2,7.4c2,0,3.1-2.5,3.1-7.5c0-4.8-1.1-7.4-3.1-7.4
+			C382.2,41.3,380.9,43.6,380.9,48.7z"/>
+		<path class="number" d="M320.1,42.2L320.1,42.2l-4.2,2l-0.9-3.8l5.8-2.7h4.2v21.9h-5L320.1,42.2L320.1,42.2z"/>
+		<path class="number" d="M335.6,42.2L335.6,42.2l-4.2,2l-0.9-3.8l5.8-2.7h4.2v21.9h-5L335.6,42.2L335.6,42.2z"/>
+		<path class="number" d="M345.1,174L345.1,174l-4.2,2l-0.9-3.8l5.8-2.7h4.2v21.9h-5L345.1,174L345.1,174z"/>
+		<path class="number" d="M354.1,191.3v-3.1l2.8-2.5c4.8-4.3,7.1-6.8,7.2-9.3c0-1.8-1-3.2-3.6-3.2c-1.9,0-3.5,0.9-4.7,1.8l-1.4-3.7
+			c1.6-1.2,4.2-2.3,7.1-2.3c5,0,7.7,2.9,7.7,6.9c0,3.7-2.6,6.6-5.8,9.4l-2,1.7v0.1h8.3v4.2L354.1,191.3L354.1,191.3z"/>
+		<path class="number" d="M43.1,243.3L43.1,243.3l-4.2,2l-0.8-3.8l5.8-2.7H48v21.9h-4.9V243.3z"/>
+		<path class="number" d="M53,255.6c0.9,0.5,3,1.3,5.1,1.3c2.7,0,4-1.3,4-2.9c0-2.2-2.2-3.1-4.4-3.2h-2.1v-3.7h2c1.7,0,3.9-0.7,3.9-2.5
+			c0-1.3-1.1-2.3-3.2-2.3c-1.8,0-3.7,0.8-4.6,1.3l-1-3.7c1.3-0.9,3.9-1.7,6.8-1.7c4.7,0,7.3,2.5,7.3,5.5c0,2.3-1.3,4.1-4,5.1v0.1
+			c2.6,0.5,4.7,2.4,4.7,5.3c0,3.9-3.4,6.7-9,6.7c-2.8,0-5.2-0.7-6.5-1.5L53,255.6z"/>
+		<path class="number" d="M857.1,475L857.1,475l-4.2,2l-0.8-3.8l5.8-2.7h4.2v21.9h-5L857.1,475L857.1,475z"/>
+		<path class="number" d="M875.2,492.4v-5.2h-9.7v-3.3l8.3-13.3h6.3v12.8h2.6v3.8H880v5.2L875.2,492.4L875.2,492.4z M875.2,483.3v-4.8
+			c0-1.3,0.1-2.7,0.2-4.1l-0.1,0c-0.7,1.4-1.3,2.7-2,4.1l-2.9,4.8l0,0.1H875.2z"/>
+		<path class="number" d="M648.7,180.7L648.7,180.7l-4.4,2l-0.9-3.9l6-2.7h4.4v22.2h-5.1V180.7z"/>
+		<path class="number" d="M672.9,180.3h-8.8l-0.5,3.4c0.5-0.1,0.9-0.1,1.5-0.1c2.2,0,4.4,0.5,6,1.6c1.7,1.1,2.7,3,2.7,5.6
+			c0,4.1-3.6,7.8-9.7,7.8c-2.7,0-5-0.6-6.3-1.3l1-3.9c1,0.5,3.1,1.1,5.1,1.1c2.2,0,4.5-1,4.5-3.4c0-2.3-1.9-3.7-6.4-3.7
+			c-1.2,0-2.1,0.1-3,0.2l1.5-11.6h12.5V180.3z"/>
+		<path class="number" d="M574.7,145.6L574.7,145.6l-4.4,2l-0.9-3.9l6-2.7h4.4v22.2h-5.1V145.6z"/>
+		<path class="number" d="M598.3,144.7c-0.6,0-1.2,0-2.1,0.1c-4.7,0.4-6.8,2.7-7.4,5.3h0.1c1.1-1.1,2.7-1.8,4.8-1.8c3.8,0,7,2.6,7,7.2
+			c0,4.4-3.4,8-8.3,8c-6,0-9-4.4-9-9.7c0-4.2,1.6-7.7,4-9.9c2.2-2,5.2-3.1,8.7-3.3c1-0.1,1.6-0.1,2.1,0L598.3,144.7z M595.3,155.8
+			c0-2.1-1.1-3.8-3.4-3.8c-1.4,0-2.6,0.8-3.1,2c-0.2,0.3-0.2,0.7-0.2,1.3c0.1,2.3,1.3,4.5,3.7,4.5C594.2,159.7,595.3,158,595.3,155.8
+			z"/>
+		<path class="number" d="M503.6,111.4L503.6,111.4l-4.4,2l-0.9-3.9l6-2.7h4.4V129h-5.1V111.4z"/>
+		<path class="number" d="M528.9,106.8v3.3l-9.3,18.9H514l9.3-17.8v-0.1H513v-4.3H528.9z"/>
+		<path class="number" d="M427.5,73.2L427.5,73.2l-4.4,2l-0.9-3.9l6-2.7h4.4v22.2h-5.1V73.2z"/>
+		<path class="number" d="M436.2,85c0-2.7,1.6-4.5,4-5.6l0-0.1c-2.2-1.1-3.3-2.9-3.3-4.9c0-3.8,3.4-6.2,8-6.2c5.3,0,7.5,3,7.5,5.7
+			c0,1.9-1.1,3.8-3.3,4.9v0.1c2.2,0.8,4.2,2.7,4.2,5.5c0,4-3.4,6.7-8.7,6.7C438.8,91.2,436.2,88,436.2,85z M447.9,84.8
+			c0-1.9-1.5-3.1-3.6-3.6c-1.7,0.5-2.7,1.7-2.7,3.3c0,1.6,1.2,3.1,3.2,3.1C446.7,87.6,447.9,86.4,447.9,84.8z M441.9,74.3
+			c0,1.5,1.4,2.5,3.2,3c1.2-0.3,2.3-1.4,2.3-2.8c0-1.4-0.8-2.8-2.8-2.8C442.9,71.7,441.9,72.9,441.9,74.3z"/>
+		<path class="number" d="M247.8,80L247.8,80l-4.4,2l-0.9-3.9l6-2.7h4.4v22.2h-5.1V80z"/>
+		<path class="number" d="M258.5,93.8c0.7,0.1,1.3,0.1,2.3,0c1.6-0.1,3.2-0.5,4.5-1.4c1.5-1,2.5-2.4,2.8-4.1l-0.1,0
+			c-1,1-2.5,1.6-4.5,1.6c-3.8,0-7-2.6-7-6.9c0-4.3,3.5-8,8.5-8c5.8,0,8.6,4.4,8.6,9.5c0,4.6-1.5,8-4,10.2c-2.2,1.9-5.1,3-8.7,3.1
+			c-0.9,0.1-1.8,0-2.4,0V93.8z M261.7,82.6c0,1.9,1.1,3.6,3.2,3.6c1.5,0,2.5-0.7,3-1.4c0.2-0.3,0.2-0.7,0.2-1.3
+			c0-2.4-0.9-4.7-3.3-4.7C263,78.8,261.7,80.3,261.7,82.6z"/>
+		<path class="number" d="M167.9,136v-3.1l2.9-2.6c4.9-4.4,7.4-6.8,7.4-9.4c0-1.8-1.1-3.2-3.7-3.2c-1.9,0-3.6,1-4.8,1.8l-1.5-3.7
+			c1.7-1.3,4.3-2.3,7.4-2.3c5.1,0,7.9,2.9,7.9,7c0,3.7-2.7,6.7-6,9.6l-2.1,1.7v0.1h8.6v4.3H167.9z"/>
+		<path class="number" d="M201.6,124.9c0,6.8-2.8,11.6-8.6,11.6c-5.8,0-8.4-5.1-8.5-11.4c0-6.4,2.8-11.5,8.6-11.5
+			C199.2,113.5,201.6,118.8,201.6,124.9z M189.8,125c0,5.1,1.2,7.5,3.3,7.5c2.1,0,3.2-2.5,3.2-7.6c0-4.9-1.1-7.5-3.2-7.5
+			C191.1,117.4,189.8,119.8,189.8,125z"/>
+		<path class="number" d="M82.3,181.2V178l2.9-2.6c4.9-4.4,7.4-6.8,7.4-9.4c0-1.8-1.1-3.2-3.7-3.2c-1.9,0-3.6,1-4.8,1.8l-1.5-3.7
+			c1.7-1.3,4.3-2.3,7.4-2.3c5.1,0,7.9,2.9,7.9,7c0,3.7-2.7,6.7-6,9.6l-2.1,1.7v0.1h8.6v4.3H82.3z"/>
+		<path class="number" d="M104.8,163.6L104.8,163.6l-4.4,2l-0.9-3.9l6-2.7h4.4v22.2h-5.1V163.6z"/>
+		<path class="number" d="M335.9,296.1v-3.1l2.9-2.6c4.9-4.4,7.4-6.8,7.4-9.4c0-1.8-1.1-3.2-3.7-3.2c-1.9,0-3.6,1-4.8,1.8l-1.5-3.7
+			c1.7-1.3,4.3-2.3,7.4-2.3c5.1,0,7.9,2.9,7.9,7c0,3.7-2.7,6.7-6,9.6l-2.1,1.7v0.1h8.6v4.3H335.9z"/>
+		<path class="number" d="M352.6,296.1v-3.1l2.9-2.6c4.9-4.4,7.4-6.8,7.4-9.4c0-1.8-1.1-3.2-3.7-3.2c-1.9,0-3.6,1-4.8,1.8l-1.5-3.7
+			c1.7-1.3,4.3-2.3,7.4-2.3c5.1,0,7.9,2.9,7.9,7c0,3.7-2.7,6.7-6,9.6l-2.1,1.7v0.1h8.6v4.3H352.6z"/>
 	</svg>
 	<div class="wrapper">
 		<h3 class="zh instruction">向左滑動瀏覽作品介紹</h3>
 		<h3 class="en instruction">Scroll to right for artworks description</h3>
 		<div class="container">
 			<div class="zh caption">
-				<h1>來自藝術家的問候</h1>
+				<h1>藝術家的話</h1>
 				<p>身為媒體藝術家，我常透過攝影、電腦等媒介或媒體設備來探索轉變、物化、東方景觀之美和哲學等主題。我相信，華嚴哲學——一種始於中國，經由朝鮮半島傳入日本發展，並在亞洲常見的思想——是貫穿我作品理念基礎的核心思想。<br><br>我所投身的媒體藝術領域思考媒體設備如何展現自身，以及我們能從媒體設備的發明及改進中發現到甚麼。在這種背景下，作為「後工業社會中的自然藝術」的媒體藝術將會成為未來的主題。日本過去在亞洲的媒體硬件生產佔有重要地位，但現在生產重心正在轉移到中國、韓國和亞洲其他地區。從這個角度來看， 媒體藝術的意識形態巧妙地操縱著媒體，並在亞洲內流動。 因應這種趨勢，我想把這種亞洲的新藝術形式推廣至不同國家的人。<br><br>經常出國，並在國外舉辦展覽。 從我還是一個小男孩開始，香港已經是我最喜歡造訪的地方之一。隨著2000年代的到來，這個城市的霓虹燈被LED取代，色溫已然改變，我對這城市景觀的改變感到新奇，亦升起懷念和惆悵之情。<br><br>媒體藝術在後疫情時代顯得非常脆弱，尤其是在實體空間中呈現真實的體驗，觀眾亦因疫情而難以親自感受。當我持續思考如何能使觀眾與裝置藝術互動時，我決定以日本文化交流大使的身份舉辦這次展覽。 這是我首次無法親臨現場設置展覽，但我已把我的想法數位化並會與各位交流。<br><br>我們始終保持聯繫。 感謝各位的蒞臨。<br><a href="https://yoichiochiai.com" target="_blank">https://yoichiochiai.com</a></p>
 			</div>
 			<div class="en caption">
-				<h1>Words from the artist</h1>
+				<h1>Message from the Artist</h1>
 				<p>As a media artist, I am exploring themes such as transformation, materialization, oriental landscape beauty and philosophy, using media devices such as photography and computers. I believe that the fundamental idea that flows through my work is the Kegon philosophy, a common Asian way of thinking that started in China and matured in Japan via the Korean Peninsula.<br><br>The field of media art that I am involved in is an artistic field that considers how to represent the media device itself and what can be seen from the media device through some kind of invention or reinvention of the wheel. In this context, I believe that media art as " Art in Nature in a Post-Industrial Society" will be a theme in the future. The production of media devices as hardware was originally a field in which Japan had a strong presence in Asia, but now the production area is shifting to China, Korea and the rest of Asia. From this perspective, I believe that the ideology of media art, which skillfully manipulates media, flows within the context of Asia. From this perspective, I would like to convey this new art form derived from Asia to people in various countries.<br><br>I often go abroad and have held exhibitions overseas. Hong Kong has been one of my favorite places to visit since I was a little boy, and with the advent of the 2000s, I feel a sense of newness, nostalgia, and sadness in the city landscape where electric signs have been replaced by LEDs and the color temperature has changed.<br><br>Media art in the post-Corona era is very fragile, especially when it comes to installing real experiences directly in three-dimensional space, which makes it hard to experience. As I continue to think about this, including how I can realize it, I have decided to hold an exhibition as Japan's Cultural Exchange Ambassador. This will be the first time that I will not be able to go to the site to set up, but my mind has been converted to digital and we are always connected. Thank you all for coming.<br><a href="https://yoichiochiai.com" target="_blank">https://yoichiochiai.com</a></p>
 			</div>
 
@@ -630,6 +667,40 @@
 			<div class="jp caption">
 				<h1>14 焦点の散らばった窓</h1>
 				<p>メディアの研究や作品を追いかけるうちに，様々なフレームで切り出される世界への憧憬がさまざまな枠の中に見えるようになった．視点のバラバラな窓を通じてアナログとデジタルの違いを眺めている。</p>
+			</div>
+
+
+			<div class="en caption">
+				<h1>15 Looking Glass Time</h1>
+				<p>A set of clocks and a lens in front of the clocks are set up in an orderly circular pattern. As the clocks emit light one after another, different times are animated together, and a strange time that does not exist (like the world of "Alice in the Mirror") is projected on the wall. By placing classical epidiascopes in sequence, I created a visual device without film media. The device consists of 12 material clocks that appear to be a single "clock" as a whole, and the time indicated by each clock is displayed in rapid succession, creating a "clock" on film. By "creating images directly from materials," this work makes us reconsider media and vision. In this work, the light and shadows emitted from the installation connect the space, and the viewer and the space itself are transformed temporally and spatially as part of the image. It is an awareness of the reinvention of the classical video device using open optics. The niche Technium of video - this is a system of representation of time and space that digitally arranges three-dimensional materials into a one-dimensional circle.</p>
+			</div>
+			<div class="en caption">
+				<h1>16 Colloidal Display</h1>
+				<p>I am continuing my exploration of matter and images. A blue morpho butterfly floats in the background of the Tokyo cityscape and sky. The material image vaguely projected on the surface of the soap film is represented by the diffusion state obtained by vibrating the transparent thin film with ultrasonic vibration and the light of the projector. It is an image of a butterfly, material and incomplete, but shining organically. A transparent thin film such as a soap film cannot project images because light penetrates it. Ultrasonic waves are used to diffuse the light at high speed. This work is based on the fragility of the material, which disappears when touched, and the peculiarity that it is drawn only where ultrasonic vibration and light meet on a thin film less than one micrometer thick. This work reconsiders the medium of sound and light, and explores a more materialistic form of visual expression. Reflections and light, low resolution and high resolution, liquid and solid, transparency and diffusion, a medium that straddles the line between matter and image. An aesthetic sense of the ethereal and the mountainous. Our media consciousness, which finds beauty in the gap between the subtle and the certain, between high and low resolution, may have continued since the mid-Heian period. I desire a vivid expression made of ephemeral things.</p>
+			</div>
+			<div class="en caption">
+				<h1>17 Levitrope</h1>
+				<p>Levitation appears to be a mysterious phenomenon. The phenomenon of matter stopping in midair under gravity reminds us of a separation from nature. For this reason, levitation has been incorporated into many forms of magic, and its mysteriousness has fascinated people. While levitation on stage is seen as a mysterious ability of magicians, levitation without human intervention strongly reminds viewers of their physicality. This is because the contrast between one's own body controlled by gravity and the levitated object that releases gravity recursively makes one strongly aware of one's own body. This media device called "Levitrope" was coined from the words "lev" (levitation) and "trope" (rotation). In this media device, a metal sphere is magnetically levitated and continues to rotate in a wheel-like motion while capturing the landscape on the sphere. In Edison's time, people succeeded in carving out a substantial world from nature through rotating images. Here, I would like to consider a media installation for the age of computational nature by means of a device that keeps rotating the appearance of a trapped entity. When the sense of unreality of levitation disappears, only the visual appearance remains. The beauty of the high-resolution brilliance of the mirror, the beauty of the low-resolution diffused light of the sky and clouds reflected in the mirror, the anti-gravity kinetic mirror sculpture that cuts out the landscape of the mountains, purple water, and clear water, the mirror for cutting out the landscape.</p>
+			</div>
+			<div class="en caption">
+				<h1>18 Borrowed Scenery and Materialized Waves</h1>
+				<p>In Tibetan Buddhism, there is a Buddhist tool called a maniwheel. It is said that spinning it has the same effect as praying words. As the maniwheel rotates in the landscape, it plays the words of prayer for reincarnation, reminding us of the harmony and transformation of the human soul and the landscape. This artwork is a sculpture that finds its inspiration there. And “borrowed scenery” is the principle of "incorporating background landscape into the composition of a garden" found in traditional East Asian garden design. This sculpture is a material mirror in the form of a wave. The apparatus is a material mirror, while it is a matter, defying gravity, and while it is a form, it is freed from its own form by reflection. The motions become part of the landscape transformer. These sculptures are supported by the integration of computer optimization calculations, fabrication technology, and magnetic technology. Waves are born in nature, in the ecosystem that we humans and the outside world create. Waves propagate. Forms receive waves. Forms transmit waves to intelligence. The intelligence drives the shapes through the waves. And again this creates waves. The intelligence converts the landscape into scenery. And the interaction between the intelligence and the waves creates another scene. Waves, matter, and intelligence. The linkage between them is beautiful. The undivided nature, the world, is a huge, single, holographic computing mechanism that uses natural waves. This work brings to the observer a new perception of the body connected to the landscape in both material and spirit.</p>
+			</div>
+			<div class="en caption">
+				<h1>19 Morpho Scenery</h1>
+				<p>I like the expression of media devices because of the disappearance of the artist's individual identity and abstraction without content. It is a meta-function that allows the viewer to regain a functional subject and relive the experience without relying on content. It seemed to me to be more than a puzzle game created by the interminable hell of social critical context and visual design.<br><br>In the production of media art, moments and moments that pass away as part of the landscape are transformed into phenomena with materiality, and the exhibition itself is made into a landscape. I like the idea of transforming the past while feeling the whole process. In the midst of the analog body and physical phenomena, I sharpen the digital that is there. Only when I interact with the resolution of time and space through the process of cutting out and giving touch to what is being lost in a world perception that can only be seen digitally, do I realize my analog spirit. He continues to cut out landscapes in various locations, expressing his poetic process of world perception related to landscapes and media devices on a campus using optical and electronic components in a series of installations.</p>
+			</div>
+			<div class="en caption">
+				<h1>20 YOICHI OCHIAI × JAPAN PHILHARMONIC ORCHESTRA VOL.3</h1>
+				<p>A series of performances to update the orchestra experience using sensing and other technologies, directed by Yoichi Ochiai and Japan Philharmonic Orchestra. The "Sound Free Concert" (Tokyo Opera City), in which audiences with and without hearing impairments can enjoy an orchestra, will present a new way of listening to and experiencing music that moves back and forth between sight and hearing. “Crossing Un-Orchestra"(Tokyo Metropolitan Theater) will create an opportunity to listen to music with synesthesia through the intersection of digital and analog, Japanese and Western, and auditory and visual.</p>
+			</div>
+			<div class="en caption">
+				<h1>21 TBD</h1>
+				<p>TBD</p>
+			</div>
+			<div class="en caption">
+				<h1>22 TBD</h1>
+				<p>TBD</p>
 			</div>
 		</div>
 	</div>	
